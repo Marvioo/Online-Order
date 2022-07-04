@@ -5,41 +5,32 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 import javax.persistence.*;
 import java.io.Serializable;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
+import javax.persistence.*;
+import java.io.Serializable;
+
 @Entity
 @Table(name = "orderitem")
 public class OrderItem implements Serializable {
-    private static final long serialVersionUID = 1L;
+
+    private static final long serialVersionUID = -2455760938054036364L;
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private int id;
 
-    @ManyToOne
-    @JsonIgnore
-    private Cart cart;
+    private int quantity;
+
+    private double price;
 
     @ManyToOne
     private MenuItem menuItem;
 
-    public Cart getCart() {
-        return cart;
-    }
+    @ManyToOne
+    @JsonIgnore
+    private Cart cart;
 
-    public void setCart(Cart cart) {
-        this.cart = cart;
-    }
-
-    public MenuItem getMenuItem() {
-        return menuItem;
-    }
-
-    public void setMenuItem(MenuItem menuItem) {
-        this.menuItem = menuItem;
-    }
-
-    private int quantity;
-
-    private double price;
 
     public int getId() {
         return id;
@@ -64,4 +55,21 @@ public class OrderItem implements Serializable {
     public void setPrice(double price) {
         this.price = price;
     }
+
+    public MenuItem getMenuItem() {
+        return menuItem;
+    }
+
+    public void setMenuItem(MenuItem menuItem) {
+        this.menuItem = menuItem;
+    }
+
+    public Cart getCart() {
+        return cart;
+    }
+
+    public void setCart(Cart cart) {
+        this.cart = cart;
+    }
+
 }

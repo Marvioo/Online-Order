@@ -4,12 +4,12 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 
 import javax.persistence.*;
 import java.io.Serializable;
-import java.util.List;
 
 @Entity
 @Table(name = "menuitem")
 public class MenuItem implements Serializable {
-    private static final long serialVersionUID = 1L;
+
+    private static final long serialVersionUID = 7551999649936522523L;
 
     @Id
     private int id;
@@ -18,28 +18,9 @@ public class MenuItem implements Serializable {
 
     private String description;
 
+    private double price;
+
     private String imageUrl;
-
-    private double prize;
-
-    @OneToMany(mappedBy = "restaurant", cascade = CascadeType.ALL, fetch = FetchType.EAGER)
-    List<MenuItem> menuItemList;
-
-    public List<MenuItem> getMenuItemList() {
-        return menuItemList;
-    }
-
-    public void setMenuItemList(List<MenuItem> menuItemList) {
-        this.menuItemList = menuItemList;
-    }
-
-    public Restaurant getRestaurant() {
-        return restaurant;
-    }
-
-    public void setRestaurant(Restaurant restaurant) {
-        this.restaurant = restaurant;
-    }
 
     @ManyToOne
     @JsonIgnore
@@ -70,6 +51,14 @@ public class MenuItem implements Serializable {
         this.description = description;
     }
 
+    public double getPrice() {
+        return price;
+    }
+
+    public void setPrice(double price) {
+        this.price = price;
+    }
+
     public String getImageUrl() {
         return imageUrl;
     }
@@ -78,11 +67,12 @@ public class MenuItem implements Serializable {
         this.imageUrl = imageUrl;
     }
 
-    public double getPrize() {
-        return prize;
+    public Restaurant getRestaurant() {
+        return restaurant;
     }
 
-    public void setPrize(double prize) {
-        this.prize = prize;
+    public void setRestaurant(Restaurant restaurant) {
+        this.restaurant = restaurant;
     }
+
 }
