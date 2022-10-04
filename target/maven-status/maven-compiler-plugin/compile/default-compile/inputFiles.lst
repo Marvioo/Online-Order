@@ -5,7 +5,9 @@
 /Users/Marvin/Developer/LaiOffer/Projects/onlineOrder/src/main/java/com/laioffer/onlineOrder/service/MenuInfoService.java
 /Users/Marvin/Developer/LaiOffer/Projects/onlineOrder/src/main/java/com/laioffer/onlineOrder/ApplicationConfig.java
 /Users/Marvin/Developer/LaiOffer/Projects/onlineOrder/src/main/java/com/laioffer/onlineOrder/dao/MenuInfoDao.java
+/Users/Marvin/Developer/LaiOffer/Projects/onlineOrder/src/main/java/com/laioffer/onlineOrder/controller/SigninController.java
 /Users/Marvin/Developer/LaiOffer/Projects/onlineOrder/src/main/java/com/laioffer/onlineOrder/dao/OrderItemDao.java
+/Users/Marvin/Developer/LaiOffer/Projects/onlineOrder/src/main/java/com/laioffer/onlineOrder/dao/CartDao.java
 /Users/Marvin/Developer/LaiOffer/Projects/onlineOrder/src/main/java/com/laioffer/onlineOrder/controller/ItemOrderController.java
 /Users/Marvin/Developer/LaiOffer/Projects/onlineOrder/src/main/java/com/laioffer/onlineOrder/service/OrderItemService.java
 /Users/Marvin/Developer/LaiOffer/Projects/onlineOrder/src/main/java/com/laioffer/onlineOrder/entity/MenuItem.java
@@ -14,6 +16,7 @@
 /Users/Marvin/Developer/LaiOffer/Projects/onlineOrder/src/main/java/com/laioffer/onlineOrder/controller/SignUpController.java
 /Users/Marvin/Developer/LaiOffer/Projects/onlineOrder/src/main/java/com/laioffer/onlineOrder/entity/Authorities.java
 /Users/Marvin/Developer/LaiOffer/Projects/onlineOrder/src/main/java/com/laioffer/onlineOrder/entity/Customer.java
+/Users/Marvin/Developer/LaiOffer/Projects/onlineOrder/src/main/java/com/laioffer/onlineOrder/service/CartService.java
 /Users/Marvin/Developer/LaiOffer/Projects/onlineOrder/src/main/java/com/laioffer/onlineOrder/controller/CheckoutController.java
 /Users/Marvin/Developer/LaiOffer/Projects/onlineOrder/src/main/java/com/laioffer/onlineOrder/entity/OrderItem.java
 /Users/Marvin/Developer/LaiOffer/Projects/onlineOrder/src/main/java/com/laioffer/onlineOrder/SecurityConfig.java
